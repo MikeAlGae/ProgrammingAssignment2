@@ -1,4 +1,5 @@
-
+## pass makeCacheMatrix a matrix in variable x
+## solve x and store in z - this will be used to test the answer to your code later.
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -12,6 +13,8 @@ makeCacheMatrix <- function(x = matrix()) {
        setsolve = setsolve,
        getsolve = getsolve)
 }
+## pass cacheSolve the same x matrix and store it in 'xx'
+## then pass cacheSolve 'xx' and store it in 'xxx'
 
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
